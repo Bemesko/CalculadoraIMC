@@ -6,4 +6,88 @@
     android:layout_height="match_parent"
     tools:context=".BmiActivity">
 
+    <TextView
+        android:id="@+id/txtShowName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="224dp"
+        android:text="Nome:"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtShowWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Peso:"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@+id/txtShowName"
+        app:layout_constraintTop_toBottomOf="@+id/txtShowName" />
+
+    <TextView
+        android:id="@+id/txtShowBMI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="IMC:"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@+id/txtShowHeight"
+        app:layout_constraintTop_toBottomOf="@+id/txtShowHeight" />
+
+    <TextView
+        android:id="@+id/txtShowHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Altura"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@+id/txtShowWeight"
+        app:layout_constraintTop_toBottomOf="@+id/txtShowWeight" />
+
+    <TextView
+        android:id="@+id/txtWeightValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.012"
+        app:layout_constraintStart_toEndOf="@+id/txtShowWeight"
+        app:layout_constraintTop_toTopOf="@+id/txtShowWeight" />
+
+    <TextView
+        android:id="@+id/txtNameValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.012"
+        app:layout_constraintStart_toEndOf="@+id/txtShowName"
+        app:layout_constraintTop_toTopOf="@+id/txtShowName" />
+
+    <TextView
+        android:id="@+id/txtHeightValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.012"
+        app:layout_constraintStart_toEndOf="@+id/txtShowHeight"
+        app:layout_constraintTop_toTopOf="@+id/txtShowHeight" />
+
+    <TextView
+        android:id="@+id/txtBMIValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.078"
+        app:layout_constraintStart_toEndOf="@+id/txtShowBMI"
+        app:layout_constraintTop_toTopOf="@+id/txtShowBMI" />
 </androidx.constraintlayout.widget.ConstraintLayout>
